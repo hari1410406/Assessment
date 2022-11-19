@@ -130,6 +130,7 @@ public class SeleniumWebDriverUtility {
 	 */
 
 	public void switchBackFromFrame(String strategy) {
+		
 		switch(strategy.toLowerCase().trim()) {
 		case "default" :
 			driver.switchTo().defaultContent();
@@ -143,7 +144,7 @@ public class SeleniumWebDriverUtility {
 	}
 
 	/**
-	 * This method is used to handle <select> tag Dropdown by using Visible Text
+	 * This method is used to handle <select> tag dropdown by using Visible Text
 	 * @param dopDownElement
 	 * @param visibleText
 	 */
@@ -208,6 +209,14 @@ public class SeleniumWebDriverUtility {
 			}
 		}
 	}
+	
+	/**
+	 * This method is used to for webelement Using custom Explicit
+	 * @param element
+	 * @param Value
+	 * @param pollingtime
+	 * @param timeDuration
+	 */
 	public void customWaitToSendKeys(WebElement element, String Value, int pollingtime, int timeDuration) {
 
 		int time=0;
@@ -227,6 +236,8 @@ public class SeleniumWebDriverUtility {
 			}
 		}
 	}
+	
+	
 	/**
 	 * This Method is used to handle alert  Pop-up
 	 */
@@ -234,6 +245,9 @@ public class SeleniumWebDriverUtility {
 	public void alertPopUp() {
 		driver.switchTo().alert().accept();
 	}
+	
+	
+	
 	/**
 	 * This method is used to switch from one window to another window.
 	 */

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class JavaScriptExecutorUtility {
 	
-private JavascriptExecutor js;
+     private JavascriptExecutor js;
 	
 	public void TypecastToJavascriptExecutor(WebDriver driver) {
 		

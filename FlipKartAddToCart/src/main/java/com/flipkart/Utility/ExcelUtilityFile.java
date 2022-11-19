@@ -54,7 +54,7 @@ public class ExcelUtilityFile {
 		
 
 		/**
-		 * This method is used to Write the data ointo Excel
+		 * This method is used to Write the data into Excel
 		 * @param sheetName
 		 * @param rowNumber
 		 * @param cellNumber
